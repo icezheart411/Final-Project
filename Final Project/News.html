@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+
+    <!-- link my stylesheet for global CSS -->
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+</head>
+
+<body>
+    <!-- main title for the page -->
+    <header>
+        <h1>Read All About It</h1>
+        <!-- nav section to be able to jump back to the other pages, put anchors to have less formating -->
+         <nav>
+            <a href="Home.html">Home</a> |
+            <a href="Guns.html">Guns</a> |
+            <a href="Maps.html">Maps</a> 
+        </nav>
+    </header>
+
+    <main>
+        <!-- first section of content entered -->
+        <section>
+            <!-- title description for the next content -->
+            <h2>Modern Warfare 4 Preorder</h2>
+            <p>
+                Preorders are up for sale now and you get bonuses if you reserve your copy now! Order now so you will be guranteed to get your copy because they are going to go really fast! You know this is a highly anticipated game, modern warfar has not pushed one from this series in many years so you know it is going to be a banger!
+            </p>
+        </section>
+
+        <section>
+            <!-- preorder image inserted for vault edition -->
+             <img src="./Images/MW4Vault.webp" alt="Picture of new game cover">
+             <!-- bullet list of some of the perks of getting game early -->
+              <ul>
+                <li>Call of Duty: Modern Warfare 4</li>
+                <li>Beta Early Access</li>
+                <li>Hunter Killer Operator Skin</li>
+                <li>Hostile Alliance Operator Pack</li>
+                <li>Special Forces Operator Pack</li>
+                <li>Signature Weapon Collection</li>
+                <li>BlackCell (Season 1)</li>
+                <li>DMZ Deployment Bonus</li>
+              </ul>
+        </section>
+        
+        <h2>Modern Warfare Preorder Info</h2>
+        <!-- section for options for preorder -->
+        <section>
+            <!-- inserted form for preorder -->
+             <form>
+                <!-- select options so you can choose which version of the game you want -->
+                 <div>
+                    <label for="game">Choose Your Game Version</label>
+                    <select id="game" name="game">
+                        <option value="Vault">Vault</option>
+                        <option value="Standard">Standard</option>
+                        <option value="Basic">Basic</option>
+                    </select>
+                 </div>
+                <!-- for email input -->
+                <div>
+                    <label for="emlUser">Email Address</label>
+                    <input type="email" id="emlUser" name="emlUser" placeholder="youremail@address" required>
+                </div>
+                <!-- input for phone number -->
+                 <div>
+                    <label for="pnumber">Phone Number</label>
+                    <input type="tel" id="tel" name="tel" placeholder="Enter Phonenumber" required>
+                 </div>
+                <!-- for first name input -->
+                <div>
+                    <label for="fName">First Name</label>
+                    <input type="text" id="fName" name="fName" placeholder="Enter First Name" required>
+                </div>
+                <!-- for last name input -->
+                 <div>
+                    <label for="lName">Last Name</label>
+                    <input type="text" id="lName" name="lName" placeholder="Enter Last Name" required>
+                 </div>
+                <!-- for address input -->
+                <div>
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder="Enter First Line" required>
+                </div>
+                <!-- for 2nd line of address -->
+                 <div>
+                    <label for="address">Second Line</label>
+                    <input type="address" id="address" placeholder="Enter Second Line" required>
+                 </div>
+                 <!-- for city and state input -->
+                  <div>
+                    <label for="city">City</label>
+                    <input type="text" id="city" placeholder="Enter City" required>
+                </div>
+                <!-- inpute for state -->
+                 <div>
+                    <label for="State">State</label>
+                    <input type="text" id="state" placeholder="Enter State" required>
+                 </div>
+                  <!-- input for zipcode -->
+                   <div>
+                        <label for="zipcode">Zipcode</label>
+                        <input type="text" id="Zipcode" name="Zipcode" placeholder="Enter Zipcode" required>
+                   </div>
+                   <!-- input password -->
+                    <div>
+                        <label for="pwdUser">Password</label>
+                        <input type="password" id="pwdUser" name="pwduseer" placeholder="Enter Password" required>
+                    </div>
+                   <!-- submit button for input above -->
+                    <div>
+                       <input type="submit" value="save"> 
+                    </div>
+             </form>
+        </section>
+    </main>
+    <!-- placed footer for credential purposes -->
+    <footer>
+        <p>© 2026 Mike Davis</p>
+    </footer>
+
+</body>
+</html>

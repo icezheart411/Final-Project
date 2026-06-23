@@ -1,0 +1,135 @@
+/* setting global stylesheet */
+/* had to import the orbitron font that I wanted to use from google */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+/* set this section up to have my header and h2 titles have the same theme */
+header, h2{
+    /* set this style border up for a 3D type view */
+    border: 5px outset orangered;
+    /* wanted the text to look different from the other so gave it a shadow to give it more dimension */
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.8), 2px 2px 4px rgba(0,0,0,0.3);
+    font: bold xx-large "Orbitron", sans-serif;
+    color: black;
+    /* set the bacground to be lindear-gradient to give it a fading effect */
+    background-image: linear-gradient(180deg, red, orange);
+    text-align: center;
+}
+/* wanted my page links to be centered in the header */
+nav{
+    text-align: center;
+    font-size: xx-large;
+}
+/* set the anchors up to not have the line under them and a different color than the origninal */
+nav a{
+    text-decoration: none;
+    color: yellow;
+}
+/* wanted the text to turn red when you mouse over the page links */
+nav a:hover{
+    color: red;
+}
+/* these titles where set especially for my images */
+h3{
+    color: gold;
+    font-style: italic;
+    text-align: center;
+}
+/* set up flexbox to space out content in a row by default */
+.flex-container1{
+    display: flex;
+}
+/* set this class up to divide the different sections of my row */
+.box{
+    align-self: center;
+    padding: 50px;
+    /* my flex was set up with two sections in the row so I changed the width and height to fill out the section better as the screen size changes */
+    width: 100%;
+    height: 100%;
+}
+/* wanted my ordered list to be centered in my flex but with smaller screens i had to set the left padding thicker to have a better affect */
+ol{
+    align-self: center;
+    padding: 25px;
+    padding-left: 100px;
+    font-size: large;
+}
+/* needed some spacing between my lines and stretched out a bit */
+li{
+    padding: 25px;   
+    width: 100%;
+}
+/* set globally to keep my theme consistant */
+body{
+    /* multiple fonts in order to display on all browsers, also to format all pages consistantly */
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: large;
+    background-color: black;
+    color: yellow;
+}
+/* set up a small border to close out the table */
+table{
+    margin: 10px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border: 5px solid red;
+    font-size: large;
+}
+/* wanted my table heading to be set up different from rest the rows */
+caption{
+    background-color: yellow;
+    color: red;
+}
+/* wanted the table head background a different color */
+th{
+    background-color: red;
+}
+/* set up to alternate row colors */
+tr:nth-child(even){
+    background-color: red;
+}
+/* set defaults for all of my images */
+img{
+    margin-top: 5px;
+    /* set this border up to make the images stand out a little better */
+    border: 5px solid red;
+    /* set it up in my professors favorite setting */
+    border-radius: 20px;
+    width: 98%;
+    height: 50%;
+}
+/* set up the form labels to format evenly */
+label{
+   display: inline-block;
+   width: 12%;
+}
+/* setup to let the form blanks to format evenly down */
+input{
+    display: inline-block;
+    width: 20%;
+    /* centered the input placeholders */
+    text-align: center;
+    background-color: silver;
+}
+/* this was a tricky one to figure out, set my input attribute so i could style by button the way I wanted instead of the default style */
+input[type="submit"]{
+    background-color: orangered;
+    color: black;
+    font-size: large; 
+    margin-left: 109px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* gave the footer an outset boarder to make it stand out better */
+footer{
+    width: 100%;
+    border: 2px outset gray;
+    border-radius: 5px;
+    padding-left: 5px;
+    /* i had to use the rgb method to get the color the shade i wanted it */
+    background-color: rgb(10, 10, 10);
+    color: red;
+}
+/* set up for smaller screens even thou the way I set my flexboxes up shouldn't make much of a difference */
+@media (max-width: 768px){
+}
